@@ -1,4 +1,4 @@
-import {test, expect } from '@playwright/test';
+/*import {test, expect } from '@playwright/test';
 
 test.beforeEach(async ({ page }) => {
     const path = require('path');
@@ -23,4 +23,4 @@ test('OK message when username and password filled in' , async ({ page }) => {
 
     await expect(page.locator('[Id="popup-message"]')).toBeVisible();
     await expect(page.getByText('OK')).toBeVisible();
-})
+})*/

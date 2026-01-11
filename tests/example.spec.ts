@@ -20,6 +20,6 @@ test('sign in disabled when valid username and invalid password', async ({ page 
     await page.goto('https://fe-delivery.tallinn-learning.ee/signin');
 
     await page.getByTestId('username-input').fill('maria');
-    await page.getByTestId('password-input').fill('psw12');
+    await page.getByTestId('password-input').fill('pwd12');
     await expect(page.getByTestId('signIn-button')).toBeDisabled();
 });
