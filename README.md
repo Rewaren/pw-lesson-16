@@ -24,6 +24,7 @@ npm install @faker-js/faker
 ```
 npx playwright install
 ```
+*This installs Chromium, Firefox, and WebKit browsers required for cross-browser testing.*
 
 ### 3. Environment Configuration⚙️
 The project uses an environment variable `APP_URL` to define the target application URL.
@@ -46,4 +47,14 @@ The project includes `.github/workflows/playwright.yml` which automatically uses
 ```
 env:
   APP_URL: ${{ secrets.APP_URL }}
+```
+
+### Running Tests🧪
+**Run All Tests**
+```
+npx playwright test
+```
+**Run Specific Test File**
+```
+npx playwright test tests/example.spec.ts
 ```
