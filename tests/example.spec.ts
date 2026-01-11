@@ -3,8 +3,8 @@ import { test, expect } from '@playwright/test';
 test('has title', async ({ page }) => {
   await page.goto('https://fe-delivery.tallinn-learning.ee/signin');
 
-  // Expect a title "to contain" a substring.
-  await expect(page).toHaveTitle(/Tallinn/);
+  await expect(page.getByRole('heading', { name: 'Tallinn Delivery' })).toBeVisible();
+  await expect(page.getByText('Training appTallinn')).toBeVisible();
 });
 
 test('has authorization error', async ({ page }) => {
