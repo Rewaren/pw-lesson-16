@@ -33,11 +33,11 @@ In WebStorm Run Configuration:
 3. In Environment variables, add: `APP_URL=https://fe-deivery.tallinn-learning.ee/signin`
 
 ### 4. GitHub Actions CI/CD Setup
-**1. Configure GitHub Secrets**
-1.1 Navigate to your GitHub repository
-1.2 Go to **Settings** → **Secrets and Variables** → **Actions**
-1.3 Click **New Repository Secret**
-1.4 Add:
+**1. Configure GitHub Secrets**<br>
+1.1 Navigate to your GitHub repository<br>
+1.2 Go to **Settings** → **Secrets and Variables** → **Actions**<br>
+1.3 Click **New Repository Secret**<br>
+1.4 Add:<br>
 - Name: `APP_URL`
 - Value: `https://fe-delivery.tallinn-learning.ee/signin`
 
